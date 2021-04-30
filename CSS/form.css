@@ -1,0 +1,21 @@
+
+#corpoTabela {
+    cursor: pointer;
+}
+
+td span {
+    cursor: pointer;
+    background-color: rgba(47, 79, 79, 0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+}
+
+td span:hover {
+    background-color: rgb(47, 79, 79);
+}

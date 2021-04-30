@@ -1,0 +1,399 @@
+h1 {
+    font-family: 'Alfa Slab One';
+    background-color: yellow;
+    padding-left: 12%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: black solid 3px;
+    /* position: relative; */
+    /* right: 11%; */
+}
+
+#conteudo {
+    margin-top: 60px;
+    
+}
+
+.item {
+    cursor: pointer;
+}
+
+.grupo h4 {
+    padding-left: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 20px;
+    border-bottom: yellow solid 6px;
+    border-left: yellow solid 6px;
+    position: relative;
+    font-family: Calistoga;
+}
+
+.grupo h4 span {
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+.cod-valor {
+    text-align: center;
+    background-color: black;
+    font-family: 'Alfa Slab One';
+    color:  yellow;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 5px;
+    position: relative;
+    height: 60px;
+}
+
+.valor {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-family: 'Alfa Slab One';
+    background-color:  yellow;
+    font-size: 12px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.descricao {
+    padding-left: 0px;
+    text-align: justify;
+    font-size: 18px;
+    /* font-family: Calistoga; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-transform: lowercase; */
+    text-transform: initial;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 3px;
+    display: flex !important;
+    align-items: center !important;
+    
+  
+
+}
+
+
+.linha {
+    background-color: rgba(241, 233, 161, 0.3);
+    margin-left: 0;
+    margin-right: 0px;
+}
+
+.add-produto {
+    min-height: 25px;
+    background-color: #d5d4d4;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    /* display: flex !important; */
+    align-items: center !important;
+    font-family: 'Alfa Slab One';
+    display: none;
+
+}
+
+.botao {
+    font-family: 'Alfa Slab One';
+    background-color:  yellow;
+    display: inline-block;
+    font-size: 20px;
+    width: 40px;
+    right: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.bt-subtrai {
+    background-color: black;
+    color:  yellow;
+}
+
+.produtor {
+    margin-bottom: 5px;
+    color: rgba(255, 217, 0, 1, 0.5);
+}
+
+.botoes {
+    right: 3px;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: -4px;
+}
+#logo
+{
+    position: fixed;
+    top: 4px;
+    right: 11%;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 320 ;
+    height:205;
+}
+
+@media (min-width: 450px) {
+
+    #btEnviar {
+        position: fixed;
+        top: 4px;
+        right: 11%;
+        text-align: center;
+        background-color: black;
+        color:  yellow;
+        /* height: 30px; */
+        font-family: 'Alfa Slab One';
+        font-size: 25px;
+        letter-spacing: 3px;
+        z-index: 2;
+        cursor: pointer;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    #btEnviar {
+        width: 100%;
+        bottom: 0px;
+        position: fixed;
+        text-align: center;
+        background-color: black;
+        border-top: #000000 solid 3px;
+        color:  yellow;
+        /* height: 30px; */
+        font-family: 'Alfa Slab One';
+        font-size: 25px;
+        letter-spacing: 3px;
+        z-index: 2;
+        cursor: pointer;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+
+    }
+
+    .container,
+    .container-sm {
+        padding: 2px;
+    }
+
+    #conteudo {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        padding-left: 2%;
+        font-size: 30px;
+    }
+
+    .grupo h4 {
+        font-size: 18px;
+        border-bottom: #000000 solid 3px;
+        border-left: #000000 solid 3px;
+    }
+
+    .descricao {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+h1 span {
+    background-color: black;
+    color:  yellow;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-janela {
+    width: 60%;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    animation-name: animatetop;
+    animation-duration: 0.8s;
+}
+
+@media (max-width: 450px) {
+
+    .modal-janela {
+        width: 100%;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.fechar {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.modal-corpo {
+    padding: 10px 10px 8px 15px;
+}
+
+.modal-cabeca {
+    background-color: yellow;
+    color: white;
+    padding: 10px;
+}
+
+.modal-rodape {
+    color: white;
+    padding: 3px;
+    padding-bottom: 35px;
+    border-bottom: solid  yellow;
+    height: 58px;
+}
+
+label,
+input[type=radio] {
+    cursor: pointer;
+}
+
+.outros {
+    margin-bottom: 3px;
+}
+
+.outros-desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.outros-valor {
+    background-color: black;
+    font-family: 'Alfa Slab One';
+    color: rgba(255, 217, 0, 1);
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 4px 4px;
+    box-sizing: border-box;
+    border: 1px solid  yellow;
+    background-color: white;
+    outline: none;
+}
+
+#txtModal {
+    font-size: 14px;
+}
+
+.enviar-ws {
+    float: right;
+    border: none;
+    background-color:  yellow;
+    color: white;
+    font-size: 22;
+    font-weight: bold;
+    padding: 5px 20px 5px 20px;
+    margin-right: 8px;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+.msg {
+    font-size: 12px;
+}
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Alfa Slab One';
+    background-color:  yellow;
+
+    border-bottom: black solid 1px;
+}
+  @media (max-width: 575.98px) {
+    .table-responsive-sm {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .table-responsive-sm > .table-bordered {
+      border: 0;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .table-responsive-md {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .table-responsive-md > .table-bordered {
+      border: 0;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .table-responsive-lg {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .table-responsive-lg > .table-bordered {
+      border: 0;
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .table-responsive-xl {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }}

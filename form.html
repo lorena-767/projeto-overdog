@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/form.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerenciar produtos</h1>
+        <form id="formulario">
+
+            <div class="row">
+                <div class="form-group col-sm-2">
+                    <label for="nome">cod:</label>
+                    <input class="form-control" type="text" id="cod" name="cod">
+                </div>
+                <div class="form-group col-sm-2">
+                    <label for="valor">Valor:</label>
+                    <input class="form-control" type="text" id="valor" name="valor">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="grupo">Grupo:</label>
+                    <input class="form-control" type="text" id="grupo" name="grupo">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="tipo">Tipo:</label>
+                    <input class="form-control" type="text" id="tipo" name="tipo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-12">
+                    <label for="descricao">Descrição:</label>
+                    <input class="form-control" type="text" id="descricao" name="descricao">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-secondary" onclick="novo()">Novo</button>
+                    <button type="button" class="btn btn-primary" onclick="gavar()">Gravar</button>
+                    <button type="button" class="btn btn-danger" onclick="apagar()">Apagar</button>
+                    <input class="" type="hidden" id="id" name="id" autocomplete="off">
+                </div>
+            </div>
+        </form>
+        <br>
+        <table class="table table-hover">
+            <thead>
+                <th width="5%">cod</th>
+                <th width="20%">Grupo</th>
+                <th width="70%">Descrição</th>
+                <th width="5%">Valor</th>
+            </thead>
+            <tbody id="corpoTabela">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/produtos.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+
+</html>

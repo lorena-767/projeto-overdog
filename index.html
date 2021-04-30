@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVERDOG</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One|Calistoga' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/index.css">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+       
+        <h1>OVER<span style="padding-top: 0px;">DOG</span></h1>
+       
+    </header>
+    <div class="container-sm" id="conteudo">
+        <div class="grupo">
+            
+        </div>
+        <div class="produtor">
+            <div class="row linha item">
+                <div class="col-2 cod-valor">
+                    <span class="cod">01</span>
+                    <div class="valor">
+                        R$ 0.0
+                    </div>
+                </div>
+                <p class="col descricao">
+                    .</p>
+            </div>
+            <div class="row add-produto">
+                <div class="col" style="position: relative;">
+                    <span class="parcial">
+                        R$ 0.0 
+                    </span>
+                    <span class="botoes">
+                        <button class="botao bt-soma">+</button>
+                        <button class="botao bt-subtrai">-</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="outros">
+            <div class="row linha item">
+                <div class="col-3 col-sm-2 outros-valor">R$ 0.0</div>
+                <div class="col outros-desc">
+                </div>
+
+            </div>
+            <div class="row add-produto">
+                <div class="col" style="position: relative;">
+                    <span class="parcial">
+                        R$ 0.0 
+                    </span>
+                    <span class="botoes">
+                        <button class="botao bt-soma">+</button>
+                        <button class="botao bt-subtrai">-</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="btEnviar" onclick="enviar()">
+        ENVIAR
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-janela">
+            <div class="modal-cabeca">
+                PEDIDO
+                <span class="fechar">&times;</span>
+            </div>
+            <div class="modal-corpo" id="txtModal">
+                <div id="pedido"></div>
+                <div id="complemeto">
+                    <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço"
+                        style="display: block;" />
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
+                    <span class="msg">Clique em 'CONTINUAR' para enviar seu pedido via Whatsapp.</span>
+                </div>
+            </div>
+            <div class="modal-rodape">
+                <button class="enviar-ws" onclick="enviarWs()" id="bt-enviarws">CONTINUAR <i class="fa fa-whatsapp"></i></button>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Final da página Localização-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Localização</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.808808233859!2d-47.905125349977915!3d-15.814032188985186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ab7c1c1dbcb%3A0x22ad14a48c5be2b9!2sDog%20Da%20Igrejinha!5e0!3m2!1spt-BR!2sbr!4v1619744321703!5m2!1spt-BR!2sbr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- Final da página Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/lorenaoliveira1205"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1"  href="https://www.instagram.com/lorenaoliveiira/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lorena-muniz-ferreira-825a2013a/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Quem sou eu</h4>
+                    <p class="lead mb-0">
+                        Criado por Lorena OLiveira para o curso do senai.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/produtos.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
